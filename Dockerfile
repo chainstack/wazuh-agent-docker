@@ -15,4 +15,4 @@ RUN apt-get update && apt-get install -y \
   mv /ossec.conf /var/ossec/etc/ && \
   rm -rf /var/lib/apt/lists/*
 
-ENTRYPOINT service wazuh-agent start && sleep infinity
+CMD ["sh", "-c", "service wazuh-agent start && sleep infinity"]
