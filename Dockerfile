@@ -4,7 +4,7 @@ LABEL maintainer "NoEnv"
 LABEL version "4.3.4"
 LABEL description "Wazuh Agent"
 
-COPY entrypoint.sh ossec.conf /
+COPY ossec.conf /
 
 RUN apt-get update && apt-get install -y \
   procps curl apt-transport-https gnupg2 inotify-tools python-docker && \
