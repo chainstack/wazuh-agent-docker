@@ -15,4 +15,4 @@ RUN apt-get update && apt-get install -y \
   mv /ossec.conf /var/ossec/etc/ && \
   rm -rf /var/lib/apt/lists/*
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT service wazuh-agent start && /bin/bash
