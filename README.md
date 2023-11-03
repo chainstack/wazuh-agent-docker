@@ -1,7 +1,7 @@
 
 # docker-wazuh-agent
 
-Wazuh is a free, open source and enterprise-ready security monitoring
+Wazuh is a free open source security monitoring
 solution for threat detection, integrity monitoring, incident response and compliance.
 
 ## Description
